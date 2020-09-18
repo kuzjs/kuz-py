@@ -1,10 +1,13 @@
 import json
+from .site import KZSite
+
 
 
 class KaagazzApp():
 	def __init__(self):
 		self.SetupMeta()
 		self.SetupBlackadder()
+		self.site = KZSite(self)
 		pass
 
 	def SetupMeta(self):
@@ -20,10 +23,7 @@ class KaagazzApp():
 		pass
 
 	def CunningPlan(self):
-		for quote in self.blackadder["quotes"]:
-			text = self.blackadder["quotes"][quote]
-			print(text)
-			pass
+		print(self.site)
 		pass
 
 	def Run(self):
