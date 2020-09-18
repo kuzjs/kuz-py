@@ -1,14 +1,12 @@
 import json
+from kuzz.kaagazz import KaagazzApp
 
+
+kuz = KaagazzApp()
 
 
 def main():
-	siteJsonPath = "site.json"
-	with open(siteJsonPath) as f:
-		sj = json.load(f)
-
-	for a in sj["navbar"]:
-		print(a["title"])
+	kuz.Run()
 	pass
 
 if __name__ == '__main__':
