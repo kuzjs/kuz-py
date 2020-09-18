@@ -1,4 +1,5 @@
-import json
+#!/usr/bin/python3
+
 from kuzz.kaagazz import KaagazzApp
 
 
