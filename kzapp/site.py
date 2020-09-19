@@ -1,5 +1,5 @@
 import json
-from .renderables import all as Renderables
+from .utils import siteutils
 
 
 
@@ -21,7 +21,7 @@ class KZSite():
 		pass
 
 	def SetupPages(self):
-		page = Renderables.Page()
+		page = siteutils.Renderables.Page()
 		pass
 
 	def __str__(self):
