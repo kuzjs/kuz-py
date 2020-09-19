@@ -1,14 +1,9 @@
+from ..base.baseobject import KZBaseObject
 
 
 
-class Renderable():
+class Renderable(KZBaseObject):
 	def __init__(self):
 		pass
-
-	def Next(self):
-		self.next
-
-	def Previous(self):
-		self.previous
 
 
