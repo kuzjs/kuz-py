@@ -17,11 +17,11 @@ class KZSite():
 		pass
 
 	def SetupRenderables(self):
-		self.SetupPages()
-		pass
-
-	def SetupPages(self):
-		page = siteutils.Renderables.Page()
+		self.authors = siteutils.GetAuthors(self)
+		self.categories = siteutils.GetCategories(self)
+		self.tags = siteutils.GetTags(self)
+		self.pages = siteutils.GetPages(self)
+		self.collections = siteutils.GetCollections(self)
 		pass
 
 	def __str__(self):
